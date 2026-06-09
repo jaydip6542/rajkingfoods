@@ -1,0 +1,332 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | Raj King Food Products</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#727a69",
+                    "primary-fixed-dim": "#9cd769",
+                    "inverse-on-surface": "#f1f1ef",
+                    "leaf-green": "#689F38",
+                    "tertiary": "#9f3f36",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#9cd769",
+                    "on-secondary-fixed": "#261a00",
+                    "tertiary-fixed-dim": "#ffb4aa",
+                    "secondary-container": "#fdc003",
+                    "secondary-fixed-dim": "#fabd00",
+                    "primary-container": "#4d821d",
+                    "on-background": "#1a1c1b",
+                    "primary": "#366800",
+                    "secondary-fixed": "#ffdf9e",
+                    "golden-grain": "#FFC107",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#410001",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-error-container": "#93000a",
+                    "ink-black": "#1A1C19",
+                    "surface-dim": "#dadad8",
+                    "inverse-surface": "#2f3130",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e2e3e1",
+                    "background": "#f9f9f7",
+                    "on-primary-fixed-variant": "#285000",
+                    "surface-cream": "#F9F9F7",
+                    "outline-variant": "#c2c9b6",
+                    "surface-container-high": "#e8e8e6",
+                    "surface-container-highest": "#e2e3e1",
+                    "secondary": "#785900",
+                    "surface-container-low": "#f4f4f2",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#1a1c1b",
+                    "tertiary-container": "#df7063",
+                    "on-secondary-container": "#6c5000",
+                    "surface-bright": "#f9f9f7",
+                    "on-tertiary-container": "#580a07",
+                    "on-primary-fixed": "#0d2000",
+                    "surface": "#f9f9f7",
+                    "tertiary-fixed": "#ffdad5",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#f9ffec",
+                    "surface-tint": "#386b01",
+                    "on-tertiary-fixed-variant": "#802821",
+                    "primary-fixed": "#b7f481",
+                    "heritage-red": "#77221B",
+                    "on-surface-variant": "#42493a",
+                    "surface-container": "#eeeeec"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "section-gap": "80px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-desktop": "48px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Inter"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="fixed top-0 w-full z-50 bg-surface-container-lowest dark:bg-ink-black shadow-sm border-b border-outline-variant dark:border-outline h-20">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-full">
+<div class="flex items-center gap-2">
+<img alt="Raj King Logo" class="h-20 w-auto transition-transform hover:scale-105 duration-300"   src="src/assets/logo.png">
+<span class="font-display-lg text-[24px] font-extrabold tracking-tight text-primary uppercase">Raj King</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1" href="about.html">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="products.html">Products</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="distribution.html">Distribution</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="contact.html">Contact</a>
+</div>
+<button class="text-surface-cream px-6 py-2.5 rounded-full font-label-md hover:opacity-90 transition-opacity">
+ </button>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative h-[60vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0 transition-all duration-700 opacity-100 translate-y-0">
+<img class="w-full h-full object-cover brightness-[0.7]" data-alt="A wide-angle, high-resolution shot of a lush golden grain field under a clear blue sky, capturing the essence of pure harvest and natural ingredients. The sunlight is warm and golden, reflecting the premium everyday aesthetic of the brand with soft highlights and deep, rich colors of heritage red and leaf green tones in the distant horizon." src="src/assets/aboutbg.png">
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full transition-all duration-700 opacity-100 translate-y-0">
+<div class="max-w-2xl text-white">
+<span class="inline-block px-4 py-1 rounded-full bg-leaf-green text-surface-cream font-label-md mb-6">Our Legacy</span>
+<h1 class="font-display-lg text-display-lg mb-6">The Journey of Raj King</h1>
+<p class="font-body-lg text-body-lg text-surface-cream/90 leading-relaxed">
+                        From a modest beginning in 1980 to becoming a household name in premium snacks, our history is built on the foundation of quality, purity, and trust.
+                    </p>
+</div>
+</div>
+</section>
+
+<section class="py-section-gap max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center transition-all duration-700 opacity-100 translate-y-0">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-3 text-leaf-green">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="font-label-md uppercase tracking-wider">A Legacy of Excellence</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-ink-black">From Tiny Sparks to Major Breakthroughs</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md text-body-md">
+<p class="">
+                            Every big idea starts small. Raj King, founded by Mr. Mansukhbhai Patel in 1980, began with a humble vision: to provide premium quality food products at prices every family could afford.
+                        </p>
+<p class="">
+                            Starting with just 15 bags per day from a small facility in Gondal, Rajkot, the brand has grown under dynamic leadership. Our commitment to the "crunchy start" and culinary expertise has transformed us from a local operation into an industrial leader.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-8 py-6 border-y border-outline-variant">
+<div>
+<div class="font-display-lg text-[40px] text-primary">4+</div>
+<div class="font-label-md text-on-surface-variant uppercase">Years of Expertise</div>
+</div>
+<div>
+<div class="font-display-lg text-[40px] text-primary">500+</div>
+<div class="font-label-md text-on-surface-variant uppercase">Clients Across India</div>
+</div>
+<div>
+<div class="font-display-lg text-[40px] text-primary">200+</div>
+<div class="font-label-md text-on-surface-variant uppercase">Professionals</div>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/5 rounded-xl -z-10 group-hover:bg-primary/10 transition-colors"></div>
+<img class="rounded-xl shadow-lg w-full aspect-[4/5] object-cover" data-alt="A detailed, macro photograph of high-quality grains including murmura and poha, showcasing their crisp texture and natural purity. The lighting is crisp and bright, creating a clean light-mode aesthetic that emphasizes the product's premium quality. Subtle leaf-green and golden-grain color accents are reflected in the background, reinforcing the brand's natural heritage." src="src/assets/pohaimage.jpeg">
+<div class="absolute bottom-8 -left-8 glass-card p-6 rounded-lg shadow-xl max-w-xs hidden md:block">
+<p class="font-headline-md text-headline-md text-primary mb-2">Our Mission</p>
+<p class="font-body-md text-body-md text-on-surface">Providing premium quality food at affordable prices for every household.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop transition-all duration-700 opacity-100 translate-y-0">
+<div class="text-center mb-16">
+<span class="text-leaf-green font-label-md uppercase tracking-widest mb-4 block">The Process</span>
+<h2 class="font-headline-lg text-headline-lg text-ink-black">State-of-the-Art Manufacturing</h2>
+<p class="max-w-2xl mx-auto mt-4 text-on-surface-variant font-body-lg text-body-lg">
+                        We combine traditional expertise with modern industrial technology to ensure every grain meets our rigorous quality standards.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="md:col-span-2 relative h-[500px] rounded-2xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="src/assets/productionimage.jpeg">
+<div class="absolute inset-0 bg-gradient-to-t from-ink-black/80 via-transparent to-transparent flex items-end p-10">
+<div class="text-white max-w-lg">
+<h3 class="font-headline-md text-headline-md mb-2">Precision Engineering</h3>
+<p class="font-body-md text-body-md text-surface-cream/80">Our fully automated lines minimize human contact and maximize hygiene, producing tons of premium snacks daily with consistent crunch and flavor.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-gutter">
+<div class="bg-surface-cream p-8 rounded-2xl border border-outline-variant flex-1 flex flex-col justify-center">
+<span class="material-symbols-outlined text-4xl text-leaf-green mb-4">verified</span>
+<h4 class="font-headline-md text-headline-md mb-2">Quality First</h4>
+<p class="text-on-surface-variant">Multi-stage cleaning and sorting processes ensure only the finest grains make it to your table.</p>
+</div>
+<div class="bg-surface-cream p-8 rounded-2xl border border-outline-variant flex-1 flex flex-col justify-center">
+<span class="material-symbols-outlined text-4xl text-leaf-green mb-4">eco</span>
+<h4 class="font-headline-md text-headline-md mb-2">Sustainable Sourcing</h4>
+<p class="text-on-surface-variant">We partner directly with farmers to source ethical, high-quality raw materials that respect the land.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-gap bg-surface-cream">
+<div class="max-w-container-max mx-auto px-margin-desktop transition-all duration-700 opacity-100 translate-y-0">
+<div class="text-center mb-16">
+<span class="text-leaf-green font-label-md uppercase tracking-widest mb-4 block">Quality Assurance</span>
+<h2 class="font-headline-lg text-headline-lg text-ink-black">Our Certifications</h2>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+<div class="h-20 flex items-center justify-center">
+<img alt="FSSAI Logo" class="h-full object-contain" src="src/assets/fssai.png"/>
+</div>
+<div class="h-20 flex items-center justify-center">
+<img alt="ISO 22000:2005 Logo" class="h-full object-contain" src="src/assets/iso.png"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-gap max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-primary rounded-3xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-10 transition-all duration-700 opacity-100 translate-y-0">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
+<div class="relative z-10 max-w-xl text-center md:text-left">
+<h2 class="font-display-lg text-white mb-6 text-[42px] leading-tight">Ready to experience the Raj King quality?</h2>
+<p class="text-surface-cream/90 font-body-lg text-body-lg mb-8">
+                        Join our growing network of distributors or explore our full range of premium snacks today.
+                    </p>
+<div class="flex flex-wrap gap-4 justify-center md:justify-start">
+<button class="bg-golden-grain text-ink-black px-8 py-3 rounded-full font-label-md hover:scale-105 transition-transform">
+                            Become a Distributor
+                        </button>
+<button class="border border-white text-white px-8 py-3 rounded-full font-label-md hover:bg-white/10 transition-colors">
+                            View Products
+                        </button>
+</div>
+</div>
+<div class="relative z-10 flex flex-col items-center bg-white/10 backdrop-blur-sm p-10 rounded-2xl border border-white/20">
+<div class="text-white text-center">
+<div class="font-display-lg text-5xl mb-2">4</div>
+<div class="font-label-md uppercase tracking-widest text-surface-cream/70">Years of trust</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container dark:bg-ink-black py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim mb-6">Raj King</div>
+<p class="text-on-surface-variant font-body-md text-body-md">
+                    Bringing the authentic taste and crunch of premium murmura and poha to every home since 1980.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-primary uppercase">Quick Links</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="index.html">Home</a></li>
+<li class=""><a class="text-primary font-bold" href="about.html">About Us</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="products.html">Products</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="distribution.html">Distribution</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-primary uppercase">Our Commitment</h4>
+<ul class="space-y-2">
+<li class="text-on-surface-variant font-body-md">100% Pure &amp; Natural</li>
+<li class="text-on-surface-variant font-body-md">Traditional Processing</li>
+<li class="text-on-surface-variant font-body-md">Rigorous Quality Checks</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-primary uppercase">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-cream border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-cream border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
+</div>
+<p class="text-on-surface-variant text-label-sm mt-4">© 2024 Raj King Food Products. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section > div').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+                observer.observe(el);
+            });
+        });
+    </script>
+
+
+</body></html>

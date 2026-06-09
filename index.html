@@ -1,0 +1,426 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#727a69",
+                    "primary-fixed-dim": "#9cd769",
+                    "inverse-on-surface": "#f1f1ef",
+                    "leaf-green": "#689F38",
+                    "tertiary": "#9f3f36",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#9cd769",
+                    "on-secondary-fixed": "#261a00",
+                    "tertiary-fixed-dim": "#ffb4aa",
+                    "secondary-container": "#fdc003",
+                    "secondary-fixed-dim": "#fabd00",
+                    "primary-container": "#4d821d",
+                    "on-background": "#1a1c1b",
+                    "primary": "#366800",
+                    "secondary-fixed": "#ffdf9e",
+                    "golden-grain": "#FFC107",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#410001",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-error-container": "#93000a",
+                    "ink-black": "#1A1C19",
+                    "surface-dim": "#dadad8",
+                    "inverse-surface": "#2f3130",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e2e3e1",
+                    "background": "#f9f9f7",
+                    "on-primary-fixed-variant": "#285000",
+                    "surface-cream": "#F9F9F7",
+                    "outline-variant": "#c2c9b6",
+                    "surface-container-high": "#e8e8e6",
+                    "surface-container-highest": "#e2e3e1",
+                    "secondary": "#785900",
+                    "surface-container-low": "#f4f4f2",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#1a1c1b",
+                    "tertiary-container": "#df7063",
+                    "on-secondary-container": "#6c5000",
+                    "surface-bright": "#f9f9f7",
+                    "on-tertiary-container": "#580a07",
+                    "on-primary-fixed": "#0d2000",
+                    "surface": "#f9f9f7",
+                    "tertiary-fixed": "#ffdad5",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#f9ffec",
+                    "surface-tint": "#386b01",
+                    "on-tertiary-fixed-variant": "#802821",
+                    "primary-fixed": "#b7f481",
+                    "heritage-red": "#77221B",
+                    "on-surface-variant": "#42493a",
+                    "surface-container": "#eeeeec"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "section-gap": "80px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-desktop": "48px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Inter"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-pattern {
+            background-color: #f9f9f7;
+            background-image: radial-gradient(#689F38 0.5px, transparent 0.5px), radial-gradient(#689F38 0.5px, #f9f9f7 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-sm border-b border-outline-variant">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+<div class="flex items-center gap-2">
+<img alt="Raj King Logo" class="h-20 w-auto transition-transform hover:scale-105 duration-300"   src="src/assets/logo.png">
+<span class="font-display-lg text-[24px] font-extrabold tracking-tight text-primary uppercase">Raj King</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="about.html">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="products.html">Products</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="distribution.html">Distribution</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="contact.html">Contact</a>
+</div>
+<button class="text-surface-cream px-6 py-2.5 rounded-full font-label-md hover:opacity-90 transition-opacity">
+ </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden bg-surface-cream">
+<div class="absolute inset-0 hero-pattern"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative z-10 py-16">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-container/10 text-primary rounded-full font-label-md">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+                        Pure Goodness in Every Flake
+                    </div>
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">
+                        A Crunchy <span class="text-leaf-green">Start</span> to Your Day
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Raj King brings you the finest selection of premium Poha, Murmura, and snacks. Rooted in heritage and processed with modern standards for a breakfast that's as healthy as it is delicious.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-leaf-green text-surface-cream px-8 py-4 rounded-full font-label-md shadow-lg shadow-leaf-green/20 hover:scale-105 transition-transform" onclick="window.location.href='products.html'">
+                            Explore Products
+                        </button>
+<button class="border-2 border-leaf-green text-leaf-green px-8 py-4 rounded-full font-label-md hover:bg-leaf-green/5 transition-colors" onclick="window.location.href='about.html'">
+                            Our Story
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-fixed-dim/20 rounded-full blur-3xl group-hover:bg-primary-fixed-dim/30 transition-colors duration-700"></div>
+<img alt="Raj King Poha Packaging" class="relative z-10 w-full max-w-[500px] mx-auto drop-shadow-2xl transform hover:rotate-2 transition-transform duration-500" src="src/assets/productimage.png">
+</div>
+</div>
+</section>
+<!-- Stats Bento Grid -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-secondary-container/20 text-secondary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">history</span>
+</div>
+<div class="font-display-lg text-[40px] text-primary mb-1">4+</div>
+<div class="font-headline-md text-headline-md text-on-surface mb-2">Years of Legacy</div>
+<p class="text-on-surface-variant">Founded in 2022, maintaining the highest quality standards for decades.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-container/20 text-primary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div class="font-display-lg text-[40px] text-primary mb-1">500+</div>
+<div class="font-headline-md text-headline-md text-on-surface mb-2">Retail Partners</div>
+<p class="text-on-surface-variant">A vast distribution network spanning across India, bringing health to every home.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-tertiary-container/20 text-tertiary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div class="font-display-lg text-[40px] text-primary mb-1">100%</div>
+<div class="font-headline-md text-headline-md text-on-surface mb-2">Pure Goodness</div>
+<p class="text-on-surface-variant">No preservatives, just the natural goodness of carefully selected grains.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Snippet -->
+<section class="py-section-gap overflow-hidden" id="about">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="aspect-square bg-surface-container-high rounded-full overflow-hidden border-8 border-white shadow-xl">
+<img alt="Premium Poha Grains" class="w-full h-full object-cover" data-alt="A macro photography shot of premium quality raw white rice flakes and flattened rice grains on a rustic wooden surface. The lighting is warm and natural, highlighting the texture and purity of the grains. The composition emphasizes the organic and high-end nature of the food product, aligned with a corporate minimalist aesthetic." src="src/assets/pohaimage.jpeg">
+</div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-golden-grain rounded-full flex flex-col items-center justify-center text-center p-4 border-4 border-white shadow-lg animate-bounce duration-slow">
+<span class="font-headline-md text-headline-md text-ink-black">Organic</span>
+<span class="font-label-sm text-on-surface-variant">Certified Quality</span>
+</div>
+</div>
+<div class="space-y-8 order-1 lg:order-2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Purity You Can Trust, Quality You Can Taste</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        At Raj King, we believe that every big idea starts small. Our journey began with a simple mission: to provide premium quality food products at affordable prices. Today, we are a leading name in processed grains, focused on delivering "Pure Goodness in Every Flake."
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-leaf-green">check_circle</span>
+<span class="font-body-md text-body-md">Sourced from the finest farms in India</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-leaf-green">check_circle</span>
+<span class="font-body-md text-body-md">State-of-the-art cleaning and processing</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-leaf-green">check_circle</span>
+<span class="font-body-md text-body-md">Strict quality control at every stage</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Product Showcase -->
+<section class="py-section-gap bg-surface-cream" id="products">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Discover Our Range</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Healthy and delicious snacks for your home or manufacturing needs.</p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Poha Card -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-outline-variant/30 flex flex-col">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Premium Poha" class="w-full h-full object-contain p-8" src="src/assets/pohabag.png">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Premium Poha</h3>
+<span class="bg-primary-container/10 text-primary px-3 py-1 rounded-full text-[12px] font-bold">BESTSELLER</span>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6">Crispy, white flattened rice flakes, perfect for a traditional Indian breakfast.</p>
+<div class="mt-auto flex items-center gap-2 text-leaf-green font-label-md py-2"><span class="material-symbols-outlined text-[20px]">verified</span><span class="">100% Organic &amp; Pure</span></div>
+</div>
+</div>
+<!-- Murmura Card -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-outline-variant/30 flex flex-col">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Premium Murmura" class="w-full h-full object-cover" data-alt="A professional studio product shot of a wooden bowl filled with crispy, white puffed rice (Murmura) on a clean, bright minimalist background. Soft side lighting highlights the texture of each individual grain. The overall atmosphere is light-mode, airy, and high-end corporate food photography." src="src/assets/pohabag.png">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Premium Murmura</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Light and airy puffed rice, processed to maintain peak crispness for snacking.</p>
+<div class="mt-auto flex items-center gap-2 text-leaf-green font-label-md py-2"><span class="material-symbols-outlined text-[20px]">eco</span><span class="">Naturally Crispy Grains</span></div>
+</div>
+</div>
+<!-- Chickpeas Card -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-outline-variant/30 flex flex-col">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Premium Chickpeas" class="w-full h-full object-cover" data-alt="Close-up of high-quality roasted chickpeas and legumes arranged artistically in a minimalist stone bowl. The scene is shot in a bright, modern studio with natural soft shadows. The color palette features earth tones and subtle greens, emphasizing freshness and high protein content for a professional food brand." src="src/assets/bagimage.png">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Roasted Chickpeas</h3>
+<p class="text-on-surface-variant font-body-md mb-6">High-protein, crunchy roasted chickpeas seasoned for a healthy afternoon snack.</p>
+<div class="mt-auto flex items-center gap-2 text-leaf-green font-label-md py-2"><span class="material-symbols-outlined text-[20px]">fitness_center</span><span class="">High Protein Snack</span></div>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<a class="inline-flex items-center gap-2 text-primary font-label-md hover:underline" href="products.html">
+                    View All Products
+                    <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-primary rounded-[2rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/leaf.png')] opacity-10"></div>
+<div class="relative z-10 space-y-8 max-w-3xl mx-auto">
+<h2 class="font-display-lg text-[40px] md:text-display-lg text-white leading-tight">Join Our Growing Distributor Network</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed text-opacity-90">
+                            Partner with Raj King and bring premium quality food products to your region. We offer competitive margins and comprehensive marketing support.
+                        </p>
+<div class="pt-6">
+<button class="bg-white text-primary px-10 py-5 rounded-full font-label-md shadow-xl hover:scale-105 transition-transform inline-flex items-center gap-3" onclick="window.location.href='distribution.html'">
+                                Become a Distributor
+                                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">handshake</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+ <section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-label-md text-primary uppercase tracking-wider mb-4">Our Clients</h2>
+<p class="font-headline-lg text-headline-lg text-on-surface max-w-3xl mx-auto">
+        More than 500+ clients have entrusted us for their premium murmura and poha needs.
+      </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">BALAJI</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">PARLE</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">GWALIA</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">SAMRAT</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">RAMDEV</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">VIMAL</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">KITCHEN XPRESS</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">HALDIRAM'S</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">CHHEDA'S</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">RAMOJI</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">BIKAJI</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/30 flex items-center justify-center aspect-[3/2] shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-full bg-surface-container-low rounded flex items-center justify-center text-on-surface-variant font-bold opacity-50">RELIANCE</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-surface-container py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 gap-gutter mb-16 md:grid-cols-3">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<img alt="Raj King Logo" class="h-10 w-auto" src="src/assets/logo.png">
+<span class="font-headline-md text-headline-md font-bold text-primary">Raj King</span>
+</div>
+<p class="text-on-surface-variant font-body-md">
+                        Crafting premium food products since 1980 with a commitment to purity, health, and authentic taste.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">thumb_up</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-md text-on-surface uppercase tracking-wider">Quick Links</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="index.html">Home</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="about.html">About Us</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="products.html">Product</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="distribution.html">Distribution</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-leaf-green transition-colors" href="contact.html">Contact</a></li>
+
+</ul>
+</div>
+
+<div class="space-y-6">
+<h4 class="font-label-md text-on-surface uppercase tracking-wider">Contact Us</h4>
+<div class="space-y-4 text-on-surface-variant">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="">Ganjiwadi Road, Gondal,<br>Dist. Rajkot, Gujarat</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="">+91 1234 567890</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="">info@rajkingfoods.com</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-body-md">© 2026 Raj King Food Products. All rights reserved.</p>
+<div class="flex gap-6">
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll observer for header transparency
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.add('shadow-sm');
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+
+
+</body></html>
